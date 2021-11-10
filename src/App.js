@@ -6,6 +6,7 @@ import About from "./components/About";
 
 import Profiles from "./components/Profiles";
 import Profile from "./components/Profile";
+import HistorySample from "./components/HistorySmaple";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <li>
             <Link to="/profiles">프로필</Link>
           </li>
+          <li>
+            <Link to="/history">history예제</Link>
+          </li>
         </ul>
         <hr />
         <Routes>
@@ -28,6 +32,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/profiles" element={<Profiles />} />
           <Route path="/profiles/:username" element={<Profile />} />
+          <Route path="/history" element={<HistorySample />} />
         </Routes>
       </BrowserRouter>
     </div>
